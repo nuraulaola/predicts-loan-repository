@@ -20,10 +20,10 @@ else:
 
 html_temp = """
             <div style="background-color:white; padding:20px; border-radius:10px;">
-                <h1 style="color:black; text-align:left; font-family: 'Montserrat', sans-serif; letter-spacing: 1px;">
+                <h1 style="color:black; text-align:left;">
                     Loan Eligibility Prediction App
                 </h1>
-                <h4 style="color:black; text-align:left; font-family: 'Montserrat', sans-serif; letter-spacing: 1px;">
+                <h4 style="color:black; text-align:left;">
                     Powered by the Amazing Insurance Team
                 </h4>
             </div>
@@ -65,7 +65,7 @@ def main():
 
 def run_ml_app():
     design = f"""<div style='padding:15px; background-color: white; border-radius:10px;'>
-                    <h1 style='color:black; text-align:left; font-family: 'Montserrat', sans-serif; letter-spacing: 1px;'>🚀 Loan Eligibility Prediction 🚀</h1>
+                    <h1 style='color:black; text-align:left;'>🚀 Loan Eligibility Prediction 🚀</h1>
                 </div>"""
     st.markdown(design, unsafe_allow_html=True)
 
