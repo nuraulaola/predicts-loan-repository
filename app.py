@@ -65,7 +65,7 @@ def main():
 
 def run_ml_app():
     design = f"""<div style='padding:15px; background-color: #454d66; border-radius:10px;'>
-                    <h1 style='color:white; text-align:center;'>🚀 Loan Eligibility Prediction 🚀</h1>
+                    <h1 style='color:white; text-align:center; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);'>🚀 Loan Eligibility Prediction 🚀</h1>
                 </div>"""
     st.markdown(design, unsafe_allow_html=True)
 
