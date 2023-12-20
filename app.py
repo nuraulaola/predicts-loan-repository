@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as stc
 import pickle
 import os
+import bootswatch
 
 # Get the directory of the current script
 script_directory = os.path.dirname(os.path.abspath(__file__))
@@ -17,6 +18,16 @@ if os.path.exists(file_path):
 else:
     st.error(f"Model file not found at {file_path}")
     st.stop()
+
+# Set Bootswatch theme
+theme = bootswatch.themes['morph']
+st.set_page_config(
+    page_title="Loan Eligibility Prediction App",
+    page_icon=":smiley:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    theme=theme,
+)
 
 html_temp = """
             <div style="background-color:white; padding:20px; border-radius:10px;">
