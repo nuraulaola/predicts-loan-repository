@@ -1,4 +1,13 @@
 import streamlit as st
+
+# Add Bootstrap and Morph Theme
+st.markdown(
+    """
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/morph/bootstrap.min.css">
+    """
+)
+
 import streamlit.components.v1 as stc
 import pickle
 import os
