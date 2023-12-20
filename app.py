@@ -7,7 +7,7 @@ import os
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the full path to the file
-file_path = os.path.join(script_directory, 'Model/Random_Forest_model.pkl')
+file_path = os.path.join(script_directory, 'Random_Forest_model.pkl')
 
 # Check if the file exists before attempting to open it
 if os.path.exists(file_path):
