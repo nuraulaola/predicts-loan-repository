@@ -19,11 +19,11 @@ else:
     st.stop()
 
 html_temp = """
-            <div style="background-color:black; padding:20px; border-radius:10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <h1 style="color:white; text-align:center; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+            <div style="background-color:white; padding:20px; border-radius:10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h1 style="color:black; text-align:left; font-family: 'Montserrat', sans-serif; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
                     Loan Eligibility Prediction App
                 </h1>
-                <h4 style="color:white; text-align:center; font-family: 'Verdana', sans-serif; letter-spacing: 1px;">
+                <h4 style="color:black; text-align:left; font-family: 'Montserrat', sans-serif; letter-spacing: 1px;">
                     Powered by the Amazing Insurance Team
                 </h4>
             </div>
@@ -64,8 +64,8 @@ def main():
     
 
 def run_ml_app():
-    design = f"""<div style='padding:15px; background-color: black; border-radius:10px;'>
-                    <h1 style='color:white; text-align:center; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);'>🚀 Loan Eligibility Prediction 🚀</h1>
+    design = f"""<div style='padding:15px; background-color: white; border-radius:10px;'>
+                    <h1 style='color:black; text-align:left; font-family: 'Montserrat', sans-serif; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);'>🚀 Loan Eligibility Prediction 🚀</h1>
                 </div>"""
     st.markdown(design, unsafe_allow_html=True)
 
