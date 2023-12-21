@@ -172,6 +172,3 @@ elif action == "Feedback 🌟":
     if st.button("Submit Feedback"):
         # Process and store the feedback (you can customize this part based on your needs)
         st.success("Thank you for your feedback!")
-
-if __name__ == "__main__":
-    main()
