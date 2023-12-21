@@ -53,7 +53,7 @@ def main():
     run_ml_app()
 
 # Build form based on selected action
-if action == "Run Loan Eligibility Prediction 📊":
+if action == "Predict Approval":
     # Form for Run Loan Eligibility Prediction
     st.subheader("🗝️ Run Loan Eligibility Prediction! 🗝️")
 
