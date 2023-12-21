@@ -36,7 +36,7 @@ action = st.sidebar.radio("What would you like to do?", ("Run Loan Eligibility P
 
 # Apply styling to all texts
 text_style = """
-    font-family: "Source Code Pro", monospace;
+    font-family: "Source Code Pro", monospace, 'Courier New', Courier, monospace;
     font-weight: 600;
     color: rgb(0, 0, 0);
     letter-spacing: -0.005em;
