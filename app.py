@@ -31,6 +31,22 @@ st.set_page_config(
 st.title("Loan Eligibility Prediction Assistant 🦉🌲")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
 
+# Key Features
+st.sidebar.write("Key Features:")
+st.sidebar.write("1. **User-Friendly Interface:** Our streamlined interface ensures a seamless experience, making it easy for you to input your details and receive predictions effortlessly.")
+st.sidebar.write("2. **Advanced Predictive Modeling:** The app utilizes a Random Forest machine learning model trained on historical data to provide accurate and reliable predictions for loan eligibility.")
+st.sidebar.write("3. **Intuitive Inputs:** Input your information with ease using the user-friendly form, including details like gender, marital status, education, income, and more.")
+st.sidebar.write("4. **Instant Results:** Receive instant predictions with just a click of a button. The app analyzes your input and provides clear insights into your eligibility for a loan.")
+st.sidebar.write("5. **Interactive Visualization:** Visualize the impact of different factors on your eligibility through a clean and interactive display, helping you understand how each variable influences the prediction.")
+
+# How to Use
+st.sidebar.write("\nHow to Use:")
+st.sidebar.write("1. **Fill in Your Details:** Provide essential information such as gender, marital status, education, and financial details through the intuitive form.")
+st.sidebar.write("2. **Click Predict:** Hit the 'Predict' button to let the app process your inputs through the advanced machine learning model.")
+st.sidebar.write("3. **Receive Instant Feedback:** Get immediate feedback on your loan eligibility. Celebrate your eligibility with a 🎉 or receive guidance for improvement with a ⚠️.")
+
+st.sidebar.write("\nWhether you're planning your financial future or seeking guidance for loan approval, our Loan Eligibility Prediction Assistant is here to assist you. Empower yourself with data-driven decisions and explore the possibilities of your financial journey! 🚀")
+
 # Apply styling to all texts
 text_style = """
     font-family: "Source Code Pro", monospace, 'Courier New', Courier, monospace;
