@@ -42,8 +42,6 @@ def main():
     run_ml_app()
 
 def run_ml_app():
-    st.markdown(unsafe_allow_html=True)
-
     # Use st.columns to create two side-by-side columns
     left, right = st.columns(2)
 
