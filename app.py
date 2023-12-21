@@ -18,20 +18,27 @@ else:
     st.error(f"Model file not found at {file_path}")
     st.stop()
 
+# Page settings
 st.set_page_config(
     page_title="Loan Eligibility Prediction App",
-    page_icon=":smiley:",
+    page_icon="🗝️",
     layout="wide",
     initial_sidebar_state="expanded",
-    theme=theme,
-)
+    menu_items = {
+    'About': "This app provides predictions for loan eligibility based on user input."
+}
 
-st.sidebar.image("assets/bear_snowflake_hello.png")
-action = st.sidebar.radio("What action would you like to take?", ("Initial Deployment 🐻‍❄",
-                                                                  "Add Add'l Consumer 🐧️",
-                                                                  "Add Add'l Provider ☃️",
-                                                                  "Uninstall 💧"))
+# Set up main page
+col1, col2 = st.columns((6, 1))
+col1.title("Loan Eligibility Prediction Assistant 🦉")
+col2.image("assets/Streamlit Loan Pred Logo (3)", width=120)
+st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
+action = st.sidebar.radio("What would you like to do?", ("Run Loan Eligibility Prediction 📊")
 
+st.markdown("Welcome to our Loan Prediction App!")
+st.markdown("This cutting-edge tool empowers our insurance team to accurately predict loan eligibility. Discover the future of finance at your fingertips!")
+st.markdown("Unleash the power of algorithms to make data-driven decisions. 🤖💡")
+                          
 html_temp = """
             <div style="background-color:white; padding:20px; border-radius:10px;">
                 <h1 style="color:black; text-align:left;">
@@ -42,26 +49,6 @@ html_temp = """
                 </h4>
             </div>
             """
-
-desc_temp = """
-            # 🚀 Loan Prediction App 🚀
-
-            Welcome to our Loan Prediction App! 🌟 This cutting-edge tool empowers our insurance team to accurately predict loan eligibility. Discover the future of finance at your fingertips!
-
-            ## 📊 Data Source
-            - Data magic happens here ✨
-
-            ## 🌐 App Content
-            - **Machine Learning Section:** Unleash the power of algorithms to make data-driven decisions. 🤖💡
-            
-            ## 💡 Why Choose Our App?
-            - Streamlined. 🚄
-            - Accurate. 🔍
-            - Future-ready. 🚀
-
-            Let's shape financial futures together! 💰💼
-            """
-
 
 def main():
     stc.html(html_temp)
