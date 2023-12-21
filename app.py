@@ -38,30 +38,8 @@ st.markdown("Welcome to our Loan Prediction App!")
 st.markdown("This cutting-edge tool empowers our insurance team to accurately predict loan eligibility. Discover the future of finance at your fingertips!")
 st.markdown("Unleash the power of algorithms to make data-driven decisions. 🤖💡")
 
-html_temp = """
-            <div style="background-color:white; padding:20px; border-radius:10px;">
-                <h1 style="color:black; text-align:left;">
-                    Loan Eligibility Prediction App
-                </h1>
-                <h4 style="color:black; text-align:left;">
-                    Powered by the Amazing Insurance Team
-                </h4>
-            </div>
-            """
-
 def main():
-    stc.html(html_temp)
-
-    menu = ["Home", "Machine Learning"]
-    choice = st.sidebar.selectbox("Menu", menu)
-
-    if choice == "Home":
-        st.subheader("🏠 Home")
-        # You need to define desc_temp somewhere before using it
-        # st.markdown(desc_temp, unsafe_allow_html=True)
-    elif choice == "Machine Learning":
-        st.subheader("🚀 Machine Learning")
-        run_ml_app()
+    run_ml_app()
 
 def run_ml_app():
     design = f"""<div style='padding:15px; background-color: white; border-radius:10px;'>
