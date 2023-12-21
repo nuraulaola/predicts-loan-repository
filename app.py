@@ -28,11 +28,24 @@ st.set_page_config(
 )
 
 # Set up main page
-col1, col2 = st.columns((10, 1))
+col1, col2 = st.columns((12, 1))
 col1.title("🦉 LOAN ELIGIBILITY PREDICTION ASSISTANT 🦉")
 col2.image("assets/Streamlit Loan Pred Logo (3).png")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
 action = st.sidebar.radio("What would you like to do?", ("Run Loan Eligibility Prediction 📊",))
+
+# Apply styling to all texts
+text_style = """
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    letter-spacing: -0.005em;
+    padding: 0.5rem 0px 1rem;
+    margin: 0px;
+    line-height: 1.2;
+"""
+
+st.markdown(f'<style>{text_style}</style>', unsafe_allow_html=True)
 
 st.markdown("Welcome to our Loan Prediction App!")
 st.markdown("This cutting-edge tool empowers our insurance team to accurately predict loan eligibility. Discover the future of finance at your fingertips!")
