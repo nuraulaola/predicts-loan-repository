@@ -28,11 +28,9 @@ st.set_page_config(
 )
 
 # Set up main page
-col1, col2 = st.columns((12, 1))
-col1.title("🦉 LOAN ELIGIBILITY PREDICTION ASSISTANT 🦉")
-col2.image("assets/Streamlit Loan Pred Logo (3).png")
+st.title("Loan Eligibility Prediction Assistant 🦉")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
-action = st.sidebar.radio("What would you like to do?", ("Run Loan Eligibility Prediction 📊",))
+action = st.sidebar.radio("What would you like to do?", ("Predict Approval",))
 
 # Apply styling to all texts
 text_style = """
