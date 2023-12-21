@@ -101,9 +101,6 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
     result = 'Not Eligible' if prediction == 0 else 'Eligible'
 
     return result
-                
-def main():
-    run_ml_app()
     
 if action == "Loan Approval Predict 🗝️":
     st.subheader("Run Loan Approval Prediction! 🗝️")
