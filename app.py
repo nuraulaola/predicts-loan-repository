@@ -28,7 +28,7 @@ st.set_page_config(
 )
 
 # Set up main page
-col1, col2 = st.columns((6, 1))
+col1, col2 = st.columns((3, 1))
 col1.title("🦉 LOAN ELIGIBILITY PREDICTION ASSISTANT 🦉")
 col2.image("assets/Streamlit Loan Pred Logo (3).png")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
