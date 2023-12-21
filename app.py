@@ -28,9 +28,8 @@ st.set_page_config(
 )
 
 # Set up main page
-st.title("Loan Eligibility Prediction Assistant 🦉")
+st.title("Loan Eligibility Prediction Assistant 🦉🌲")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
-action = st.sidebar.radio("What would you like to do?", ("Predict Approval",))
 
 # Apply styling to all texts
 text_style = """
@@ -52,10 +51,7 @@ st.markdown("Unleash the power of algorithms to make data-driven decisions. 🤖
 def main():
     run_ml_app()
 
-# Build form based on selected action
-if action == "Predict Approval":
-    # Form for Run Loan Eligibility Prediction
-    st.subheader("Run Loan Approval Prediction! 🗝️")
+st.subheader("Run Loan Approval Prediction! 🗝️")
 
 def run_ml_app():
     # Use st.columns to create two side-by-side columns
