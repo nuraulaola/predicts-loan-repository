@@ -41,6 +41,11 @@ st.markdown("Unleash the power of algorithms to make data-driven decisions. 🤖
 def main():
     run_ml_app()
 
+# Build form based on selected action
+if action == "Run Loan Eligibility Prediction 📊":
+    # Form for Run Loan Eligibility Prediction
+    st.subheader("🗝️ Run Loan Eligibility Prediction! 🗝️")
+
 def run_ml_app():
     # Use st.columns to create two side-by-side columns
     left, right = st.columns(2)
