@@ -29,8 +29,8 @@ st.set_page_config(
 
 # Set up main page
 col1, col2 = st.columns((6, 1))
-col1.title("Loan Eligibility Prediction Assistant 🦉")
-col2.image("assets/Streamlit Loan Pred Logo (1).png")
+col1.title("🦉 LOAN ELIGIBILITY PREDICTION ASSISTANT 🦉")
+col2.image("assets/Streamlit Loan Pred Logo (3).png")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
 action = st.sidebar.radio("What would you like to do?", ("Run Loan Eligibility Prediction 📊",))
 
@@ -42,10 +42,7 @@ def main():
     run_ml_app()
 
 def run_ml_app():
-    design = f"""<div style='padding:15px; background-color: white; border-radius:10px;'>
-                    <h1 style='color:black; text-align:left;'>🚀 Loan Eligibility Prediction 🚀</h1>
-                </div>"""
-    st.markdown(design, unsafe_allow_html=True)
+    st.markdown(unsafe_allow_html=True)
 
     # Use st.columns to create two side-by-side columns
     left, right = st.columns(2)
