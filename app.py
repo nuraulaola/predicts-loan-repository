@@ -30,7 +30,7 @@ st.set_page_config(
 # Set up main page
 col1, col2 = st.columns((6, 1))
 col1.title("Loan Eligibility Prediction Assistant 🦉")
-col2.image("assets/Streamlit Loan Pred Logo (3)", width=120)
+col2.image("assets/Streamlit Loan Pred Logo (1).png")
 st.sidebar.image("assets/Streamlit Loan Pred Logo (1).png")
 action = st.sidebar.radio("What would you like to do?", ("Run Loan Eligibility Prediction 📊",))
 
